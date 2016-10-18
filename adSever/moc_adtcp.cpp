@@ -1,16 +1,16 @@
 /****************************************************************************
-** Meta object code from reading C++ file 'adplayer.h'
+** Meta object code from reading C++ file 'adtcp.h'
 **
 ** Created by: The Qt Meta Object Compiler version 67 (Qt 5.5.0)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include "adplayer.h"
+#include "adtcp.h"
 #include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
-#error "The header file 'adplayer.h' doesn't include <QObject>."
+#error "The header file 'adtcp.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
 #error "This file was generated using the moc from 5.5.0. It"
 #error "cannot be used with the include files from this version of Qt."
@@ -18,31 +18,32 @@
 #endif
 
 QT_BEGIN_MOC_NAMESPACE
-struct qt_meta_stringdata_Adplayer_t {
-    QByteArrayData data[6];
-    char stringdata0[59];
+struct qt_meta_stringdata_AdTcp_t {
+    QByteArrayData data[7];
+    char stringdata0[51];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-    qptrdiff(offsetof(qt_meta_stringdata_Adplayer_t, stringdata0) + ofs \
+    qptrdiff(offsetof(qt_meta_stringdata_AdTcp_t, stringdata0) + ofs \
         - idx * sizeof(QByteArrayData)) \
     )
-static const qt_meta_stringdata_Adplayer_t qt_meta_stringdata_Adplayer = {
+static const qt_meta_stringdata_AdTcp_t qt_meta_stringdata_AdTcp = {
     {
-QT_MOC_LITERAL(0, 0, 8), // "Adplayer"
-QT_MOC_LITERAL(1, 9, 9), // "startPlay"
-QT_MOC_LITERAL(2, 19, 0), // ""
-QT_MOC_LITERAL(3, 20, 11), // "readPlayMsg"
-QT_MOC_LITERAL(4, 32, 11), // "readWeather"
-QT_MOC_LITERAL(5, 44, 14) // "requestWeather"
+QT_MOC_LITERAL(0, 0, 5), // "AdTcp"
+QT_MOC_LITERAL(1, 6, 9), // "newClient"
+QT_MOC_LITERAL(2, 16, 0), // ""
+QT_MOC_LITERAL(3, 17, 7), // "read_id"
+QT_MOC_LITERAL(4, 25, 8), // "rmClient"
+QT_MOC_LITERAL(5, 34, 12), // "broadcastMsg"
+QT_MOC_LITERAL(6, 47, 3) // "msg"
 
     },
-    "Adplayer\0startPlay\0\0readPlayMsg\0"
-    "readWeather\0requestWeather"
+    "AdTcp\0newClient\0\0read_id\0rmClient\0"
+    "broadcastMsg\0msg"
 };
 #undef QT_MOC_LITERAL
 
-static const uint qt_meta_data_Adplayer[] = {
+static const uint qt_meta_data_AdTcp[] = {
 
  // content:
        7,       // revision
@@ -59,55 +60,54 @@ static const uint qt_meta_data_Adplayer[] = {
        1,    0,   34,    2, 0x0a /* Public */,
        3,    0,   35,    2, 0x0a /* Public */,
        4,    0,   36,    2, 0x0a /* Public */,
-       5,    0,   37,    2, 0x0a /* Public */,
+       5,    1,   37,    2, 0x0a /* Public */,
 
  // slots: parameters
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
-    QMetaType::Void,
+    QMetaType::Void, QMetaType::QString,    6,
 
        0        // eod
 };
 
-void Adplayer::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+void AdTcp::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        Adplayer *_t = static_cast<Adplayer *>(_o);
+        AdTcp *_t = static_cast<AdTcp *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
-        case 0: _t->startPlay(); break;
-        case 1: _t->readPlayMsg(); break;
-        case 2: _t->readWeather(); break;
-        case 3: _t->requestWeather(); break;
+        case 0: _t->newClient(); break;
+        case 1: _t->read_id(); break;
+        case 2: _t->rmClient(); break;
+        case 3: _t->broadcastMsg((*reinterpret_cast< QString(*)>(_a[1]))); break;
         default: ;
         }
     }
-    Q_UNUSED(_a);
 }
 
-const QMetaObject Adplayer::staticMetaObject = {
-    { &QMainWindow::staticMetaObject, qt_meta_stringdata_Adplayer.data,
-      qt_meta_data_Adplayer,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
+const QMetaObject AdTcp::staticMetaObject = {
+    { &QTcpServer::staticMetaObject, qt_meta_stringdata_AdTcp.data,
+      qt_meta_data_AdTcp,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
 };
 
 
-const QMetaObject *Adplayer::metaObject() const
+const QMetaObject *AdTcp::metaObject() const
 {
     return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
 }
 
-void *Adplayer::qt_metacast(const char *_clname)
+void *AdTcp::qt_metacast(const char *_clname)
 {
     if (!_clname) return Q_NULLPTR;
-    if (!strcmp(_clname, qt_meta_stringdata_Adplayer.stringdata0))
-        return static_cast<void*>(const_cast< Adplayer*>(this));
-    return QMainWindow::qt_metacast(_clname);
+    if (!strcmp(_clname, qt_meta_stringdata_AdTcp.stringdata0))
+        return static_cast<void*>(const_cast< AdTcp*>(this));
+    return QTcpServer::qt_metacast(_clname);
 }
 
-int Adplayer::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+int AdTcp::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
-    _id = QMainWindow::qt_metacall(_c, _id, _a);
+    _id = QTcpServer::qt_metacall(_c, _id, _a);
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
