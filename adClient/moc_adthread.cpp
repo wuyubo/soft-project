@@ -1,16 +1,16 @@
 /****************************************************************************
-** Meta object code from reading C++ file 'adclient.h'
+** Meta object code from reading C++ file 'adthread.h'
 **
 ** Created by: The Qt Meta Object Compiler version 67 (Qt 5.5.0)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include "adclient.h"
+#include "adthread.h"
 #include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
-#error "The header file 'adclient.h' doesn't include <QObject>."
+#error "The header file 'adthread.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
 #error "This file was generated using the moc from 5.5.0. It"
 #error "cannot be used with the include files from this version of Qt."
@@ -18,25 +18,25 @@
 #endif
 
 QT_BEGIN_MOC_NAMESPACE
-struct qt_meta_stringdata_AdClient_t {
+struct qt_meta_stringdata_AdThread_t {
     QByteArrayData data[1];
     char stringdata0[9];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-    qptrdiff(offsetof(qt_meta_stringdata_AdClient_t, stringdata0) + ofs \
+    qptrdiff(offsetof(qt_meta_stringdata_AdThread_t, stringdata0) + ofs \
         - idx * sizeof(QByteArrayData)) \
     )
-static const qt_meta_stringdata_AdClient_t qt_meta_stringdata_AdClient = {
+static const qt_meta_stringdata_AdThread_t qt_meta_stringdata_AdThread = {
     {
-QT_MOC_LITERAL(0, 0, 8) // "AdClient"
+QT_MOC_LITERAL(0, 0, 8) // "AdThread"
 
     },
-    "AdClient"
+    "AdThread"
 };
 #undef QT_MOC_LITERAL
 
-static const uint qt_meta_data_AdClient[] = {
+static const uint qt_meta_data_AdThread[] = {
 
  // content:
        7,       // revision
@@ -52,7 +52,7 @@ static const uint qt_meta_data_AdClient[] = {
        0        // eod
 };
 
-void AdClient::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+void AdThread::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     Q_UNUSED(_o);
     Q_UNUSED(_id);
@@ -60,28 +60,28 @@ void AdClient::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, vo
     Q_UNUSED(_a);
 }
 
-const QMetaObject AdClient::staticMetaObject = {
-    { &QMainWindow::staticMetaObject, qt_meta_stringdata_AdClient.data,
-      qt_meta_data_AdClient,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
+const QMetaObject AdThread::staticMetaObject = {
+    { &QThread::staticMetaObject, qt_meta_stringdata_AdThread.data,
+      qt_meta_data_AdThread,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
 };
 
 
-const QMetaObject *AdClient::metaObject() const
+const QMetaObject *AdThread::metaObject() const
 {
     return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
 }
 
-void *AdClient::qt_metacast(const char *_clname)
+void *AdThread::qt_metacast(const char *_clname)
 {
     if (!_clname) return Q_NULLPTR;
-    if (!strcmp(_clname, qt_meta_stringdata_AdClient.stringdata0))
-        return static_cast<void*>(const_cast< AdClient*>(this));
-    return QMainWindow::qt_metacast(_clname);
+    if (!strcmp(_clname, qt_meta_stringdata_AdThread.stringdata0))
+        return static_cast<void*>(const_cast< AdThread*>(this));
+    return QThread::qt_metacast(_clname);
 }
 
-int AdClient::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+int AdThread::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
-    _id = QMainWindow::qt_metacall(_c, _id, _a);
+    _id = QThread::qt_metacall(_c, _id, _a);
     if (_id < 0)
         return _id;
     return _id;

@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>795</width>
-    <height>503</height>
+    <width>1011</width>
+    <height>519</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -67,7 +67,10 @@
                <string notr="true">background-color: rgb(85, 255, 255);</string>
               </property>
               <property name="text">
-               <string>TextLabel</string>
+               <string/>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
               </property>
              </widget>
             </item>
@@ -195,6 +198,9 @@
               <property name="text">
                <string>TextLabel</string>
               </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
              </widget>
             </item>
             <item>
@@ -276,33 +282,13 @@
      </layout>
     </item>
    </layout>
-   <zorder>client_lw</zorder>
-   <zorder>ad_lw</zorder>
-   <zorder>date_lb</zorder>
-   <zorder>weather_lb</zorder>
-   <zorder>city_cb</zorder>
-   <zorder>distict_cb</zorder>
-   <zorder>set_city_bt</zorder>
-   <zorder>video_lb</zorder>
-   <zorder>vdoname_lb</zorder>
-   <zorder>msg_te</zorder>
-   <zorder>clear_msg_bt</zorder>
-   <zorder>broast_msg_bt</zorder>
-   <zorder>delete_ad_bt</zorder>
-   <zorder>add_ad_bt</zorder>
-   <zorder>msg_lw</zorder>
-   <zorder>delete_ad_bt</zorder>
-   <zorder>add_ad_bt</zorder>
-   <zorder>add_ad_bt_2</zorder>
-   <zorder>delete_ad_bt_2</zorder>
-   <zorder>label_2</zorder>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>795</width>
+     <width>1011</width>
      <height>23</height>
     </rect>
    </property>

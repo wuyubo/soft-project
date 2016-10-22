@@ -1,26 +1,29 @@
 #include "addate.h"
+#include <QDebug>
 
-AdDate::AdDate(QLabel *_mlabel, QObject *parent):
-    QObject(parent)
+AdDate::AdDate(QLabel *_mlabel, QWidget *parent):
+    QWidget(parent)
 {
     mlabel = _mlabel;
-    mtimer = new QTimer;
-    connect(mtimer, SIGNAL(timeout()), this, SLOT(updateTime()));
+    timer = new QTimer;
+    connect(timer, SIGNAL(timeout()), this, SLOT(updateTime()));
 }
 
 AdDate::~AdDate()
 {
-    delete mtimer;
+
 }
 
-void AdDate::start()
+void AdDate::startTimer()
 {
-     mtimer->start(1000);
+    timer->start(1000);
 }
 
-void AdDate::updateTime()
+
+void  AdDate::updateTime()
 {
-    QString time = QDate::currentDate().toString("yy-MM-dd")+"\n"
-                   +QTime::currentTime().toString("hh:mm:ss");
-    mlabel->setText(time);
+    date = QDate::currentDate().toString("yy-MM-dd");
+    time =  QTime::currentTime().toString("hh:mm:ss");
+    mlabel->setText(date+"\n"+time);
 }
+

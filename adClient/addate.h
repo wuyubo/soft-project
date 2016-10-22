@@ -2,22 +2,33 @@
 #define ADDATE_H
 
 #include <QTime>
+#include <QTimer>
 #include <QDate>
 #include <QLabel>
-#include <QTimer>
+#include <QEvent>
+#include <QThread>
+#include <QPainter>
+#include <QFont>
 
-class AdDate : public QObject
+
+class AdDate : public QWidget
 {
     Q_OBJECT
 public:
-    AdDate(QLabel *_mlabel, QObject *parent = 0);
+    AdDate(QLabel *_mlabel, QWidget *parent = 0);
     ~AdDate();
-    void start();
+    void startTimer();
+signals:
+
 public slots:
     void updateTime();
 private:
     QLabel *mlabel;
-    QTimer *mtimer;
+
+    QTimer *timer;
+    QString date;
+    QString time;
+
 };
 
 #endif // ADDATE_H

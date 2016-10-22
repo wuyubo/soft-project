@@ -660,13 +660,21 @@ moc_adclient.cpp: /home/gec/Qt5.5.0/5.5/gcc/include/QtWidgets/QMainWindow \
 		addate.h \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/QTime \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/qdatetime.h \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/QTimer \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/qtimer.h \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/qbasictimer.h \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/QDate \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtWidgets/QLabel \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtWidgets/qlabel.h \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtWidgets/qframe.h \
-		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/QTimer \
-		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/qtimer.h \
-		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/qbasictimer.h \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/QEvent \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/QThread \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/qthread.h \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtGui/QPainter \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtGui/qpainter.h \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtGui/qtextoption.h \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtGui/qpen.h \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtGui/QFont \
 		adsocket.h \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtNetwork/QTcpSocket \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtNetwork/qtcpsocket.h \
@@ -676,12 +684,9 @@ moc_adclient.cpp: /home/gec/Qt5.5.0/5.5/gcc/include/QtWidgets/QMainWindow \
 		weather.h \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/QObject \
 		rollmassege.h \
-		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/QEvent \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/QRect \
-		/home/gec/Qt5.5.0/5.5/gcc/include/QtGui/QPainter \
-		/home/gec/Qt5.5.0/5.5/gcc/include/QtGui/qpainter.h \
-		/home/gec/Qt5.5.0/5.5/gcc/include/QtGui/qtextoption.h \
-		/home/gec/Qt5.5.0/5.5/gcc/include/QtGui/qpen.h \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/QProcess \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/qprocess.h \
 		adclient.h
 	/home/gec/Qt5.5.0/5.5/gcc/bin/moc $(DEFINES) -I/home/gec/Qt5.5.0/5.5/gcc/mkspecs/linux-g++-32 -I/mnt/hgfs/qtcode/qtproject/advisementPlayer/client/adClient -I/home/gec/Qt5.5.0/5.5/gcc/include -I/home/gec/Qt5.5.0/5.5/gcc/include/QtWidgets -I/home/gec/Qt5.5.0/5.5/gcc/include/QtGui -I/home/gec/Qt5.5.0/5.5/gcc/include/QtNetwork -I/home/gec/Qt5.5.0/5.5/gcc/include/QtCore adclient.h -o moc_adclient.cpp
 
@@ -732,16 +737,12 @@ moc_addate.cpp: /home/gec/Qt5.5.0/5.5/gcc/include/QtCore/QTime \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/qregexp.h \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/qstringmatcher.h \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/qpair.h \
-		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/QDate \
-		/home/gec/Qt5.5.0/5.5/gcc/include/QtWidgets/QLabel \
-		/home/gec/Qt5.5.0/5.5/gcc/include/QtWidgets/qlabel.h \
-		/home/gec/Qt5.5.0/5.5/gcc/include/QtWidgets/qframe.h \
-		/home/gec/Qt5.5.0/5.5/gcc/include/QtWidgets/qwidget.h \
-		/home/gec/Qt5.5.0/5.5/gcc/include/QtGui/qwindowdefs.h \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/QTimer \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/qtimer.h \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/qbasictimer.h \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/qobject.h \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/qobjectdefs.h \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/qobjectdefs_impl.h \
-		/home/gec/Qt5.5.0/5.5/gcc/include/QtGui/qwindowdefs_win.h \
-		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/qobject.h \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/qcoreevent.h \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/qscopedpointer.h \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/qmetatype.h \
@@ -749,6 +750,13 @@ moc_addate.cpp: /home/gec/Qt5.5.0/5.5/gcc/include/QtCore/QTime \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/qcontainerfwd.h \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/qisenum.h \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/qobject_impl.h \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/QDate \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtWidgets/QLabel \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtWidgets/qlabel.h \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtWidgets/qframe.h \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtWidgets/qwidget.h \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtGui/qwindowdefs.h \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtGui/qwindowdefs_win.h \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/qmargins.h \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtGui/qpaintdevice.h \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/qrect.h \
@@ -792,9 +800,14 @@ moc_addate.cpp: /home/gec/Qt5.5.0/5.5/gcc/include/QtCore/QTime \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/qfiledevice.h \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtGui/qvector2d.h \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtGui/qtouchdevice.h \
-		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/QTimer \
-		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/qtimer.h \
-		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/qbasictimer.h \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/QEvent \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/QThread \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/qthread.h \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtGui/QPainter \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtGui/qpainter.h \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtGui/qtextoption.h \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtGui/qpen.h \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtGui/QFont \
 		addate.h
 	/home/gec/Qt5.5.0/5.5/gcc/bin/moc $(DEFINES) -I/home/gec/Qt5.5.0/5.5/gcc/mkspecs/linux-g++-32 -I/mnt/hgfs/qtcode/qtproject/advisementPlayer/client/adClient -I/home/gec/Qt5.5.0/5.5/gcc/include -I/home/gec/Qt5.5.0/5.5/gcc/include/QtWidgets -I/home/gec/Qt5.5.0/5.5/gcc/include/QtGui -I/home/gec/Qt5.5.0/5.5/gcc/include/QtNetwork -I/home/gec/Qt5.5.0/5.5/gcc/include/QtCore addate.h -o moc_addate.cpp
 
@@ -868,6 +881,11 @@ moc_adsocket.cpp: /home/gec/Qt5.5.0/5.5/gcc/include/QtNetwork/QTcpSocket \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/qcontiguouscache.h \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtNetwork/QHostAddress \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtNetwork/qhostaddress.h \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/QTimer \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/qtimer.h \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/qbasictimer.h \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/QThread \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/qthread.h \
 		adsocket.h
 	/home/gec/Qt5.5.0/5.5/gcc/bin/moc $(DEFINES) -I/home/gec/Qt5.5.0/5.5/gcc/mkspecs/linux-g++-32 -I/mnt/hgfs/qtcode/qtproject/advisementPlayer/client/adClient -I/home/gec/Qt5.5.0/5.5/gcc/include -I/home/gec/Qt5.5.0/5.5/gcc/include/QtWidgets -I/home/gec/Qt5.5.0/5.5/gcc/include/QtGui -I/home/gec/Qt5.5.0/5.5/gcc/include/QtNetwork -I/home/gec/Qt5.5.0/5.5/gcc/include/QtCore adsocket.h -o moc_adsocket.cpp
 
@@ -1092,6 +1110,13 @@ moc_rollmassege.cpp: /home/gec/Qt5.5.0/5.5/gcc/include/QtWidgets/QLabel \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtGui/qpainter.h \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtGui/qtextoption.h \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtGui/qpen.h \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtGui/QFont \
+		addate.h \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/QTime \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/qdatetime.h \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/QDate \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/QThread \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/qthread.h \
 		rollmassege.h
 	/home/gec/Qt5.5.0/5.5/gcc/bin/moc $(DEFINES) -I/home/gec/Qt5.5.0/5.5/gcc/mkspecs/linux-g++-32 -I/mnt/hgfs/qtcode/qtproject/advisementPlayer/client/adClient -I/home/gec/Qt5.5.0/5.5/gcc/include -I/home/gec/Qt5.5.0/5.5/gcc/include/QtWidgets -I/home/gec/Qt5.5.0/5.5/gcc/include/QtGui -I/home/gec/Qt5.5.0/5.5/gcc/include/QtNetwork -I/home/gec/Qt5.5.0/5.5/gcc/include/QtCore rollmassege.h -o moc_rollmassege.cpp
 
@@ -1222,13 +1247,21 @@ main.o: main.cpp adclient.h \
 		addate.h \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/QTime \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/qdatetime.h \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/QTimer \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/qtimer.h \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/qbasictimer.h \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/QDate \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtWidgets/QLabel \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtWidgets/qlabel.h \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtWidgets/qframe.h \
-		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/QTimer \
-		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/qtimer.h \
-		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/qbasictimer.h \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/QEvent \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/QThread \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/qthread.h \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtGui/QPainter \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtGui/qpainter.h \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtGui/qtextoption.h \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtGui/qpen.h \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtGui/QFont \
 		adsocket.h \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtNetwork/QTcpSocket \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtNetwork/qtcpsocket.h \
@@ -1238,19 +1271,18 @@ main.o: main.cpp adclient.h \
 		weather.h \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/QObject \
 		rollmassege.h \
-		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/QEvent \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/QRect \
-		/home/gec/Qt5.5.0/5.5/gcc/include/QtGui/QPainter \
-		/home/gec/Qt5.5.0/5.5/gcc/include/QtGui/qpainter.h \
-		/home/gec/Qt5.5.0/5.5/gcc/include/QtGui/qtextoption.h \
-		/home/gec/Qt5.5.0/5.5/gcc/include/QtGui/qpen.h \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/QProcess \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/qprocess.h \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtWidgets/QApplication \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtWidgets/qapplication.h \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/qcoreapplication.h \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/qeventloop.h \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtWidgets/qdesktopwidget.h \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtGui/qguiapplication.h \
-		/home/gec/Qt5.5.0/5.5/gcc/include/QtGui/qinputmethod.h
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtGui/qinputmethod.h \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/QTextCodec \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/qtextcodec.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o main.cpp
 
 adclient.o: adclient.cpp adclient.h \
@@ -1362,13 +1394,21 @@ adclient.o: adclient.cpp adclient.h \
 		addate.h \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/QTime \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/qdatetime.h \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/QTimer \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/qtimer.h \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/qbasictimer.h \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/QDate \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtWidgets/QLabel \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtWidgets/qlabel.h \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtWidgets/qframe.h \
-		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/QTimer \
-		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/qtimer.h \
-		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/qbasictimer.h \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/QEvent \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/QThread \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/qthread.h \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtGui/QPainter \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtGui/qpainter.h \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtGui/qtextoption.h \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtGui/qpen.h \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtGui/QFont \
 		adsocket.h \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtNetwork/QTcpSocket \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtNetwork/qtcpsocket.h \
@@ -1378,12 +1418,9 @@ adclient.o: adclient.cpp adclient.h \
 		weather.h \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/QObject \
 		rollmassege.h \
-		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/QEvent \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/QRect \
-		/home/gec/Qt5.5.0/5.5/gcc/include/QtGui/QPainter \
-		/home/gec/Qt5.5.0/5.5/gcc/include/QtGui/qpainter.h \
-		/home/gec/Qt5.5.0/5.5/gcc/include/QtGui/qtextoption.h \
-		/home/gec/Qt5.5.0/5.5/gcc/include/QtGui/qpen.h \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/QProcess \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/qprocess.h \
 		ui_adclient.h \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/QVariant \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtWidgets/QAction \
@@ -1398,12 +1435,6 @@ adclient.o: adclient.cpp adclient.h \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtGui/qinputmethod.h \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtWidgets/QButtonGroup \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtWidgets/qbuttongroup.h \
-		/home/gec/Qt5.5.0/5.5/gcc/include/QtWidgets/QGridLayout \
-		/home/gec/Qt5.5.0/5.5/gcc/include/QtWidgets/qgridlayout.h \
-		/home/gec/Qt5.5.0/5.5/gcc/include/QtWidgets/qlayout.h \
-		/home/gec/Qt5.5.0/5.5/gcc/include/QtWidgets/qlayoutitem.h \
-		/home/gec/Qt5.5.0/5.5/gcc/include/QtWidgets/qboxlayout.h \
-		/home/gec/Qt5.5.0/5.5/gcc/include/QtWidgets/QHBoxLayout \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtWidgets/QHeaderView \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtWidgets/qheaderview.h \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtWidgets/qabstractitemview.h \
@@ -1420,8 +1451,8 @@ adclient.o: adclient.cpp adclient.h \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtWidgets/qstyle.h \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtWidgets/qtabbar.h \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtWidgets/qrubberband.h \
-		/home/gec/Qt5.5.0/5.5/gcc/include/QtWidgets/QVBoxLayout \
-		/home/gec/Qt5.5.0/5.5/gcc/include/QtWidgets/QWidget
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtWidgets/QWidget \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/QDebug
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o adclient.o adclient.cpp
 
 addate.o: addate.cpp addate.h \
@@ -1472,16 +1503,12 @@ addate.o: addate.cpp addate.h \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/qregexp.h \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/qstringmatcher.h \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/qpair.h \
-		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/QDate \
-		/home/gec/Qt5.5.0/5.5/gcc/include/QtWidgets/QLabel \
-		/home/gec/Qt5.5.0/5.5/gcc/include/QtWidgets/qlabel.h \
-		/home/gec/Qt5.5.0/5.5/gcc/include/QtWidgets/qframe.h \
-		/home/gec/Qt5.5.0/5.5/gcc/include/QtWidgets/qwidget.h \
-		/home/gec/Qt5.5.0/5.5/gcc/include/QtGui/qwindowdefs.h \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/QTimer \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/qtimer.h \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/qbasictimer.h \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/qobject.h \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/qobjectdefs.h \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/qobjectdefs_impl.h \
-		/home/gec/Qt5.5.0/5.5/gcc/include/QtGui/qwindowdefs_win.h \
-		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/qobject.h \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/qcoreevent.h \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/qscopedpointer.h \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/qmetatype.h \
@@ -1489,6 +1516,13 @@ addate.o: addate.cpp addate.h \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/qcontainerfwd.h \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/qisenum.h \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/qobject_impl.h \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/QDate \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtWidgets/QLabel \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtWidgets/qlabel.h \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtWidgets/qframe.h \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtWidgets/qwidget.h \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtGui/qwindowdefs.h \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtGui/qwindowdefs_win.h \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/qmargins.h \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtGui/qpaintdevice.h \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/qrect.h \
@@ -1532,9 +1566,15 @@ addate.o: addate.cpp addate.h \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/qfiledevice.h \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtGui/qvector2d.h \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtGui/qtouchdevice.h \
-		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/QTimer \
-		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/qtimer.h \
-		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/qbasictimer.h
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/QEvent \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/QThread \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/qthread.h \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtGui/QPainter \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtGui/qpainter.h \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtGui/qtextoption.h \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtGui/qpen.h \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtGui/QFont \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/QDebug
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o addate.o addate.cpp
 
 adsocket.o: adsocket.cpp adsocket.h \
@@ -1608,6 +1648,11 @@ adsocket.o: adsocket.cpp adsocket.h \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/qcontiguouscache.h \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtNetwork/QHostAddress \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtNetwork/qhostaddress.h \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/QTimer \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/qtimer.h \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/qbasictimer.h \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/QThread \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/qthread.h \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/QDebug
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o adsocket.o adsocket.cpp
 
@@ -1833,6 +1878,13 @@ rollmassege.o: rollmassege.cpp rollmassege.h \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtGui/qpainter.h \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtGui/qtextoption.h \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtGui/qpen.h \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtGui/QFont \
+		addate.h \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/QTime \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/qdatetime.h \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/QDate \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/QThread \
+		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/qthread.h \
 		/home/gec/Qt5.5.0/5.5/gcc/include/QtCore/QDebug
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o rollmassege.o rollmassege.cpp
 

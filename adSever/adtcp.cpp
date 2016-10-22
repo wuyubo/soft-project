@@ -1,6 +1,10 @@
 #include "adtcp.h"
+#include "weather.h"
+#include "advideo.h"
 #include <QDebug>
 
+
+QString AdTcp::current_msg="暂无广播信息";
 AdTcp::AdTcp(QListWidget *_client_lw, QObject *parent) :
     QTcpServer(parent)
 {
@@ -10,7 +14,7 @@ AdTcp::AdTcp(QListWidget *_client_lw, QObject *parent) :
         close();
     }
 
-
+   // write_mutex = new QMutex;
     client_list = new QList<Client>;
     client_lw =_client_lw;
 
@@ -26,6 +30,7 @@ AdTcp::~AdTcp()
     close();
 }
 
+//新客户机连接
 void AdTcp::newClient()
 {
     Client *new_client = new Client;
@@ -34,17 +39,31 @@ void AdTcp::newClient()
     connect(new_client->msocket, SIGNAL(readyRead()), this, SLOT(read_id()));\
     connect(new_client->msocket, SIGNAL(disconnected()), this, SLOT(rmClient()));
     client_list->append(*new_client);
+
+    QString cmd=QString::number(WEATHER)+"|"+Weather::current_wd+"|$#^|"
+                +QString::number(MASSEGE)+"|"+AdTcp::current_msg+"|$#^|"
+                +QString::number(VIDEO)+"|"+AdVideo::current_vdo;
+
+    broadcastMsg(cmd);
 }
 
 void AdTcp::read_id()
 {
     QString id = client_list->last().msocket->readAll();
-    client_list->last().id = id;
-    client_lw->addItem(id);
+    if(id == "get")
+        qDebug()<<"get";
+    else
+    {
+         client_list->last().id = id;
+         client_lw->addItem(id);
+    }
+
 }
 
+//广播命令结客户机
 void AdTcp::broadcastMsg(QString msg)
 {
+    msg = "^|"+msg+"|$#";
     int count = client_list->size();
     for(int i = 0; i< count; i++)
     {
